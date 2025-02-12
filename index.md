@@ -33,4 +33,20 @@ grid_navigation:
       excerpt: Photography blog
       cta: Visit
       url: 'https://artimitates.life/'
+    - title: artimitates.life
+      excerpt: Photography blog
+      cta: Visit
+      url: 'https://artimitates.life/'
+    - title: madewithlove.in
+      excerpt: Aussie startups
+      cta: Visit
+      url: 'https://madewithlove.in/'
+    - title: amaizing.art
+      excerpt: GenAI project
+      cta: Visit
+      url: 'https://amaizing.art/'
+    - title: socialrecommendator.com
+      excerpt: AI based social recommendations generator
+      cta: Visit
+      url: 'https://ai.socialrecommendator.com'
 ---
