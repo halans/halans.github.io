@@ -18,7 +18,7 @@ doks:
             logo:
                 text: halans.github.io
                 image:
-            copyright: &copy; 2008 - 2025 - halans.github.io
+            copyright: 2008 - 2025 - halans.github.io
         social_list:
             - network_name: bluesky
               profile_url: 'https://bsky.app/profile/halans.com'
