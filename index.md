@@ -5,7 +5,7 @@ keywords:
 
 # Hero section
 title: halans.github.io
-description: Belgian Waffle Connoisseur. Photographer. Coder.
+description: Belgian Waffle Connoisseur. Photographer. Coder.<br> My repository for all things personal and private.
 buttons:
     - icon: github
       content: Github Repo
@@ -25,4 +25,12 @@ grid_navigation:
       excerpt: Main personal blog
       cta: Visit
       url: 'https://halans.com/'
+    - title: halansphotography.com
+      excerpt: Photography business site
+      cta: Visit
+      url: 'https://halansphotography.com/'
+    - title: artimitates.life
+      excerpt: Photography blog
+      cta: Visit
+      url: 'https://artimitates.life/'
 ---
