@@ -33,10 +33,6 @@ grid_navigation:
       excerpt: Photography blog
       cta: Visit
       url: 'https://artimitates.life/'
-    - title: artimitates.life
-      excerpt: Photography blog
-      cta: Visit
-      url: 'https://artimitates.life/'
     - title: madewithlove.in
       excerpt: Aussie startups
       cta: Visit
@@ -49,4 +45,12 @@ grid_navigation:
       excerpt: AI based social recommendations generator
       cta: Visit
       url: 'https://ai.socialrecommendator.com'
+    - title: strangelove-ai.com
+      excerpt: AI news link blog and AI T-shirts
+      cta: Visit
+      url: 'https://strangelove-ai.com/'
+    - title: not-a-robot.me
+      excerpt: Me? Not A Robot! AI T-shirts
+      cta: Visit
+      url: 'https://not-a-robot.me/'
 ---
