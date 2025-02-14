@@ -27,30 +27,50 @@ grid_navigation:
       url: 'https://halans.com/'
     - title: halansphotography.com
       excerpt: Photography business site
-      cta: Visit
+      cta: Check it out
       url: 'https://halansphotography.com/'
     - title: artimitates.life
       excerpt: Photography blog
-      cta: Visit
+      cta: Read
       url: 'https://artimitates.life/'
-    - title: madewithlove.in
+    - title: MadeWithLove.In
       excerpt: Aussie startups
-      cta: Visit
+      cta: Browse
       url: 'https://madewithlove.in/'
+    - title: not-a-robot.me
+      excerpt: Me? Not A Robot! AI T-shirts
+      cta: Browse T-Shirts
+      url: 'https://not-a-robot.me/'
     - title: amaizing.art
-      excerpt: GenAI project
-      cta: Visit
+      excerpt: GenAI projects
+      cta: Explore
       url: 'https://amaizing.art/'
-    - title: socialrecommendator.com
+    - title: Social Recommendator
       excerpt: AI based social recommendations generator
       cta: Visit
       url: 'https://ai.socialrecommendator.com'
     - title: strangelove-ai.com
       excerpt: AI news link blog and AI T-shirts
-      cta: Visit
+      cta: Read
       url: 'https://strangelove-ai.com/'
-    - title: not-a-robot.me
-      excerpt: Me? Not A Robot! AI T-shirts
-      cta: Visit
-      url: 'https://not-a-robot.me/'
+    - title: AI Puppy Trainer
+      excerpt: AI Puppy Trainer chatbot
+      cta: Try now
+      url: 'https://puppytrainer.ai'
+    - title: AI Puppy Parenting
+      excerpt: AI Puppy Parenting chatbot
+      cta: Learn
+      url: 'https://puppyparenting.ai'
+    - title: AI Dream Interpretation
+      excerpt: Explore the symbols and stories in your dreams with AI
+      cta: Explore
+      url: 'https://ai.dreaminterpretation.me'
+    - title: Short Back Focus
+      excerpt: Free micro stock photography collection.
+      cta: Discover
+      url: 'https://shortbackfocus.com'
+    - title: Belgian Waffle Connoisseur
+      excerpt: AI waffles blog experiment.
+      cta: Browse
+      url: 'https://belgianwaffleconnoisseur.com'
 ---
