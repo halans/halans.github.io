@@ -2,27 +2,25 @@
  * Code (generic/_code.scss)
  */
 
-@use "../variables";
-
 /* ----- General ----- */
 code,
 kbd,
 tt {
-	font-family: variables.$font-family-monospace;
-	color: variables.$color-code;
-	background-color: variables.$color-code-bg;
+	font-family: $font-family-monospace;
+	color: $color-code;
+	background-color: $color-code-bg;
 	border-radius: .1875rem;
 	padding: .125rem .375rem .1875rem .375rem;
 }
 
 pre {
 	overflow: auto;
-	border-left: 8px solid variables.$color-pre-border;
+	border-left: 8px solid $color-pre-border;
 	margin: 0 0 1.25rem 0;
 	-webkit-overflow-scrolling: touch;
 
 	code {
-		color: variables.$color-pre;
+		color: $color-pre;
 		background-color: transparent;
 		border-radius: 0;
 		padding: 0;
@@ -31,7 +29,7 @@ pre {
 
 /* ----- Highlight ----- */
 .highlight .hll { background-color: #49483e }
-pre.highlight { background: #212733; color: variables.$color-pre; padding: 1.5625rem; }
+pre.highlight { background: #212733; color: $color-pre; padding: 1.5625rem; }
 .highlight .c { color: #75715e } /* Comment */
 .highlight .err { color: #960050; background-color: #1e0010 } /* Error */
 .highlight .k { color: #66d9ef } /* Keyword */

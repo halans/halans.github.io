@@ -2,10 +2,6 @@
  * Sections list (components/_sections-list.scss)
  */
 
-@use "../variables";
-@use "../tools";
-@use "../objects/icons";
-
 /* ----- General ----- */
 .sections-list {
 	float: left;
@@ -41,14 +37,14 @@
 			transition: border .2s;
 
 			&.active {
-				border-left-color: variables.$color-dark-blue;
+				border-left-color: $color-dark-blue;
 			}
 
 			&.has-submenu {
 				padding-right: 1.25rem;
 
 				&::after {
-					@include icons.icon;
+					@extend .icon;
 					content: '\e91d';
 					color: #bdbdbd;
 					display: inline-block;
@@ -65,7 +61,7 @@
 
 				&.active {
 					&::after {
-						color: variables.$color-dark-blue;
+						color: $color-dark-blue;
 					}
 
 					> ul {
@@ -79,7 +75,7 @@
 			}
 
 			a {
-				@include tools.link-reset;
+				@include link-reset;
 			}
 		}
 	}

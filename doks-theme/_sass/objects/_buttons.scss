@@ -2,13 +2,10 @@
  * Buttons (objects/_buttons.scss)
  */
 
-@use "../variables";
-@use "../tools";
-
 /* ----- General ----- */
 .btn {
-	@include tools.link-reset;
-	font-family: variables.$font-family-secondary;
+	@include link-reset;
+	font-family: $font-family-secondary;
 	font-weight: 500;
 	display: inline-block;
 	margin: 0 0 1.25rem 0;
@@ -24,26 +21,22 @@
 	border-radius: 3.125rem;
 }
 
-@mixin btn--dark {
-	color: variables.$color-white;
-	background-color: variables.$color-dark-blue;
+.btn--dark {
+	color: $color-white;
+	background-color: $color-dark-blue;
 	padding: .5625rem 1.5625rem;
 	transition: color .2s, background-color .2s;
 
-	@media (min-width: variables.$screen-sm-min) {
+	@media (min-width: $screen-sm-min) {
 		padding: .8125rem 2.1875rem;
 	}
 
 	&:hover,
 	&:focus,
 	&:active {
-		color: variables.$color-dark-blue;
-		background-color: variables.$color-yellow;
+		color: $color-dark-blue;
+		background-color: $color-yellow;
 	}
-}
-
-.btn--dark {
-	@include btn--dark;
 }
 
 .btn--w-icon {
@@ -77,7 +70,7 @@
 	&:focus,
 	&:active {
 		.icon {
-			@include tools.translate(.3125rem, 0);
+			@include translate(.3125rem, 0);
 		}
 	}
 }

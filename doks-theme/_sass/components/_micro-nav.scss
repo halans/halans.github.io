@@ -2,34 +2,31 @@
  * Micro nav (components/_micro-nav.scss)
  */
 
-@use "../variables";
-@use "../tools";
-
 /* ----- General ----- */
 .micro-nav {
-	color: variables.$color-white;
-	background-color: variables.$color-dark-blue;
+	color: $color-white;
+	background-color: $color-dark-blue;
 	padding: .9375rem 0;
 	text-align: center;
 
-	@media (min-width: variables.$screen-sm-min) {
+	@media (min-width: $screen-sm-min) {
 		text-align: left;
 	}
 }
 
 /* ----- Back ----- */
 .micro-nav__back {
-	@include tools.link-reset;
+	@include link-reset;
 	display: inline-block;
 	font-weight: 500;
-	font-family: variables.$font-family-secondary;
+	font-family: $font-family-secondary;
 	text-transform: uppercase;
 
 	&:hover,
 	&:focus,
 	&:active {
 		.icon {
-			@include tools.translate(-.3125rem, 0);
+			@include translate(-.3125rem, 0);
 		}
 	}
 

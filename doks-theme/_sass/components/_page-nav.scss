@@ -2,38 +2,35 @@
  * Page nav (components/_page-nav.scss)
  */
 
-@use "../variables";
-@use "../tools";
-
 /* ----- General ----- */
 .page-nav {
-	color: variables.$color-dark-blue;
-	background-color: variables.$color-theme-blue;
+	color: $color-dark-blue;
+	background-color: $color-theme-blue;
 	padding: 1.25rem 0;
 
-	@media (min-width: variables.$screen-sm-min) {
+	@media (min-width: $screen-sm-min) {
 		padding: 2.1875rem 0 2.5rem 0;
 	}
 }
 
 /* ----- Item ----- */
 .page-nav__item {
-	@include tools.link-reset;
+	@include link-reset;
 	display: block;
 	text-align: center;
 	font-weight: 500;
-	font-family: variables.$font-family-secondary;
+	font-family: $font-family-secondary;
 
-	@media (min-width: variables.$screen-sm-min) {
-		font-size: variables.$font-size-h3;
+	@media (min-width: $screen-sm-min) {
+		font-size: $font-size-h3;
 	}
 
 	& + & {
-		border-top: 1px solid rgba(variables.$color-dark, .15);
+		border-top: 1px solid rgba($color-dark, .15);
 		padding-top: 1.25rem;
 		margin-top: 1.25rem;
 
-		@media (min-width: variables.$screen-sm-min) {
+		@media (min-width: $screen-sm-min) {
 			border-top: 0;
 			padding-top: 0;
 			margin-top: 0;
@@ -49,7 +46,7 @@
 }
 
 .page-nav__item--prev {
-	@media (min-width: variables.$screen-sm-min) {
+	@media (min-width: $screen-sm-min) {
 		float: left;
 	}
 
@@ -57,7 +54,7 @@
 	&:focus,
 	&:active {
 		.icon {
-			@include tools.translate(-.625rem, 0);
+			@include translate(-.625rem, 0);
 		}
 	}
 
@@ -67,7 +64,7 @@
 }
 
 .page-nav__item--next {
-	@media (min-width: variables.$screen-sm-min) {
+	@media (min-width: $screen-sm-min) {
 		float: right;
 	}
 
@@ -75,7 +72,7 @@
 	&:focus,
 	&:active {
 		.icon {
-			@include tools.translate(.625rem, 0);
+			@include translate(.625rem, 0);
 		}
 	}
 

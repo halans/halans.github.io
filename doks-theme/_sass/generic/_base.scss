@@ -2,27 +2,24 @@
  * Base (generic/_base.scss)
  */
 
-@use "../variables";
-@use "../tools";
-
 /* ----- General ----- */
 html {
 	font-size: 14px;
-	@include tools.box-sizing(border-box);
+	@include box-sizing(border-box);
 	-webkit-tap-highlight-color: transparent;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 
-	@media (min-width: variables.$screen-sm-min) {
+	@media (min-width: $screen-sm-min) {
 		font-size: 16px;
 	}
 }
 
 body {
-	color: variables.$color-dark;
-	font-family: variables.$font-family-primary;
-	font-size: variables.$font-size-base;
-	line-height: variables.$line-height-base;
+	color: $color-dark;
+	font-family: $font-family-primary;
+	font-size: $font-size-base;
+	line-height: $line-height-base;
 }
 
 /* ----- Everything ----- */
@@ -30,7 +27,7 @@ body {
 	&,
 	&::before,
 	&::after {
-		@include tools.box-sizing(inherit);
+		@include box-sizing(inherit);
 	}
 }
 
@@ -41,9 +38,9 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-	font-family: variables.$font-family-secondary;
+	font-family: $font-family-secondary;
 	font-weight: 400;
-	line-height: variables.$line-height-headings;
+	line-height: $line-height-headings;
 	margin: 2.5rem 0 .9375rem 0;
 
 	&[id] {
@@ -56,38 +53,38 @@ h6, .h6 {
 }
 
 h1, .h1 {
-	font-size: variables.$font-size-h1;
+	font-size: $font-size-h1;
 	font-weight: 700;
 }
 
 h2, .h2 {
-	font-size: variables.$font-size-h2;
+	font-size: $font-size-h2;
 	font-weight: 700;
-	border-bottom: 1px solid variables.$color-h2-border;
+	border-bottom: 1px solid $color-h2-border;
 	padding-bottom: .5rem;
 }
 
 h3, .h3 {
-	font-size: variables.$font-size-h3;
+	font-size: $font-size-h3;
 	font-weight: 500;
 }
 
 h4, .h4 {
-	font-size: variables.$font-size-h4;
+	font-size: $font-size-h4;
 }
 
 h5, .h5 {
-	font-size: variables.$font-size-h5;
+	font-size: $font-size-h5;
 }
 
 h6, .h6 {
-	font-size: variables.$font-size-h6;
+	font-size: $font-size-h6;
 }
 
 /* ----- Inline elements ----- */
 small,
 .text-small {
-	font-size: variables.$font-size-small;
+	font-size: $font-size-small;
 }
 
 /* ----- Paragraphs ----- */
@@ -114,19 +111,19 @@ img {
 /* ----- Horizontal rules ----- */
 hr {
 	border: 0;
-	border-top: 1px solid variables.$color-horizontal-rule;
+	border-top: 1px solid $color-horizontal-rule;
 	margin: 0 0 1.25rem 0;
 }
 
 /* ----- States ----- */
 ::-moz-selection {
-	background: rgba(variables.$color-yellow, .99);
-	color: variables.$color-dark-blue;
+	background: rgba($color-yellow, .99);
+	color: $color-dark-blue;
 }
 
 ::selection {
-	background: rgba(variables.$color-yellow, .99);
-	color: variables.$color-dark-blue;
+	background: rgba($color-yellow, .99);
+	color: $color-dark-blue;
 }
 
 /* ----- Quotes ----- */
@@ -135,7 +132,7 @@ blockquote {
 }
 
 q {
-	color: variables.$color-dark-blue;
+	color: $color-dark-blue;
 }
 
 /* ----- Lists ----- */
@@ -151,7 +148,7 @@ ul {
 
 		&:before {
 			content: '\2014';
-			color: variables.$color-list-prefix;
+			color: $color-list-prefix;
 			position: absolute;
 			left: 0;
 		}
@@ -163,7 +160,7 @@ dl {
 	margin: 0 0 1.25rem 0;
 
 	dt {
-		color: variables.$color-definition-list;
+		color: $color-definition-list;
 		font-weight: 700;
 	}
 
@@ -182,29 +179,29 @@ em {
 table {
 	width: 100%;
 	text-align: left;
-	font-size: variables.$font-size-base;
+	font-size: $font-size-base;
 	border-collapse: collapse;
 	margin: 0 0 1.25rem 0;
 
 	th, td {
-		border: 2px solid variables.$color-table-border;
+		border: 2px solid $color-table-border;
 		vertical-align: middle;
 		padding: .625rem .9375rem;
 
-		@media (min-width: variables.$screen-sm-min) {
+		@media (min-width: $screen-sm-min) {
 			padding: .8125rem 1.25rem;
 		}
 
 		a {
-			border-color: variables.$color-dark;
+			border-color: $color-dark;
 		}
 	}
 
 	th {
-		font-family: variables.$font-family-secondary;
+		font-family: $font-family-secondary;
 		text-transform: uppercase;
-		background-color: variables.$color-table-header-bg;
-		border-color: variables.$color-table-header-border;
+		background-color: $color-table-header-bg;
+		border-color: $color-table-header-border;
 	}
 }
 
@@ -214,7 +211,7 @@ table {
 	-webkit-overflow-scrolling: touch;
 	margin: 0 0 1.25rem 0;
 
-	@media (min-width: variables.$screen-sm-min) {
+	@media (min-width: $screen-sm-min) {
 		overflow-x: visible;
 	}
 
@@ -222,7 +219,7 @@ table {
 		min-width: 43.75rem;
 		margin: 0;
 
-		@media (min-width: variables.$screen-sm-min) {
+		@media (min-width: $screen-sm-min) {
 			min-width: 0;
 			margin: 0;
 		}

@@ -2,9 +2,6 @@
  * Social list (components/_social-list.scss)
  */
 
-@use "../variables";
-@use "../tools";
-
 /* ----- General ----- */
 .social-list {
 	margin-bottom: 0;
@@ -26,9 +23,9 @@
 
 /* ----- Item ----- */
 .social-list__item {
-	@include tools.link-reset;
+	@include link-reset;
 	display: block;
-	color: variables.$color-social-item;
+	color: $color-social-item;
 	font-size: 1.875em;
 	line-height: 1;
 	transition: color .2s;

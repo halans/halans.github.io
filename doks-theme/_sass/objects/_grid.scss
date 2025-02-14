@@ -2,53 +2,50 @@
  * Grid (objects/_grid.scss)
  */
 
-@use "../variables";
-@use "../tools";
-
 /* ----- Container widths ----- */
 .container {
-	@include tools.container-fixed;
+	@include container-fixed;
 
-	@media (min-width: variables.$screen-sm-min) {
-		width: variables.$container-sm;
+	@media (min-width: $screen-sm-min) {
+		width: $container-sm;
 	}
 
-	@media (min-width: variables.$screen-md-min) {
-		width: variables.$container-md;
+	@media (min-width: $screen-md-min) {
+		width: $container-md;
 	}
 
-	@media (min-width: variables.$screen-lg-min) {
-		width: variables.$container-lg;
+	@media (min-width: $screen-lg-min) {
+		width: $container-lg;
 	}
 }
 
 /* ----- Fluid container ----- */
 .container-fluid {
-	@include tools.container-fixed;
+	@include container-fixed;
 }
 
 /* ----- Row ----- */
 .row {
-	@include tools.make-row;
+	@include make-row;
 }
 
 /* ----- Columns ----- */
-@include tools.make-grid-columns;
+@include make-grid-columns;
 
 /* ----- Extra small grid ----- */
-@include tools.make-grid(xs);
+@include make-grid(xs);
 
 /* ----- Small grid ----- */
-@media (min-width: variables.$screen-sm-min) {
-	@include tools.make-grid(sm);
+@media (min-width: $screen-sm-min) {
+	@include make-grid(sm);
 }
 
 /* ----- Medium grid ----- */
-@media (min-width: variables.$screen-md-min) {
-	@include tools.make-grid(md);
+@media (min-width: $screen-md-min) {
+	@include make-grid(md);
 }
 
 /* ----- Large grid ----- */
-@media (min-width: variables.$screen-lg-min) {
-	@include tools.make-grid(lg);
+@media (min-width: $screen-lg-min) {
+	@include make-grid(lg);
 }

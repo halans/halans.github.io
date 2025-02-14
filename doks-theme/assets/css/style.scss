@@ -10,38 +10,50 @@
 /* ----- Charset ----- */
 @charset 'utf-8';
 
+/* ----- Variables ----- */
+@import 'variables';
+
+/* ----- Tools ----- */
+@import 'tools/prefixer';
+@import 'tools/clearfix';
+@import 'tools/grid-framework';
+@import 'tools/grid';
+@import 'tools/hyperlinks';
+@import 'tools/lists';
+@import 'tools/responsive-visibility';
+
 /* ----- Base ----- */
-@forward 'generic/normalize';
-@forward 'generic/base';
-@forward 'generic/code';
+@import 'generic/normalize';
+@import 'generic/base';
+@import 'generic/code';
 
 /* ----- Utilities ----- */
-@forward 'utilities/alignment';
-@forward 'utilities/visibility';
+@import 'utilities/alignment';
+@import 'utilities/visibility';
 
 /* ----- Objects ----- */
-@forward 'objects/buttons';
-@forward 'objects/content';
-@forward 'objects/error-404';
-@forward 'objects/grid';
-@forward 'objects/icons';
-@forward 'objects/section';
+@import 'objects/buttons';
+@import 'objects/content';
+@import 'objects/error-404';
+@import 'objects/grid';
+@import 'objects/icons';
+@import 'objects/section';
 
 /* ----- Components ----- */
-@forward 'components/callout';
-@forward 'components/example';
-@forward 'components/hero-subheader';
-@forward 'components/micro-nav';
-@forward 'components/nav-grid';
-@forward 'components/page-nav';
-@forward 'components/sections-list';
-@forward 'components/site-footer';
-@forward 'components/site-header';
-@forward 'components/social-list';
-@forward 'components/title-anchor-link';
+@import 'components/callout';
+@import 'components/example';
+@import 'components/hero-subheader';
+@import 'components/micro-nav';
+@import 'components/nav-grid';
+@import 'components/page-nav';
+@import 'components/sections-list';
+@import 'components/site-footer';
+@import 'components/site-header';
+@import 'components/social-list';
+@import 'components/title-anchor-link';
 
 /* ----- Themes ----- */
-@forward 'themes/green';
-@forward 'themes/red';
-@forward 'themes/yellow';
-@forward 'themes/purple';
+@import 'themes/green';
+@import 'themes/red';
+@import 'themes/yellow';
+@import 'themes/purple';

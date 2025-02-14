@@ -2,45 +2,42 @@
  * Nav grid (components/_nav-grid.scss)
  */
 
-@use "../variables";
-@use "../tools";
-
 /* ----- General ----- */
 .nav-grid {
 	font-size: .9375em;
 	line-height: 1.8em;
-	color: variables.$color-dark-blue;
+	color: $color-dark-blue;
 }
 
 .nav-grid--out {
-	@media (min-width: variables.$screen-sm-min) {
+	@media (min-width: $screen-sm-min) {
 		margin-top: -11.25rem;
 	}
 }
 
 /* ----- Item ----- */
 .nav-grid__item {
-	@include tools.link-reset;
+	@include link-reset;
 	display: block;
-	background-color: variables.$color-theme-blue;
-	border: 2px solid rgba(variables.$color-dark-blue, .2);
+	background-color: $color-theme-blue;
+	border: 2px solid rgba($color-dark-blue, .2);
 	margin-bottom: .9375rem;
 	transition: background-color .2s, border .2s;
 
-	@media (min-width: variables.$screen-sm-min) {
+	@media (min-width: $screen-sm-min) {
 		margin-bottom: 1.875rem;
 	}
 
 	&:hover,
 	&:active,
 	&:focus {
-		border-color: variables.$color-dark-blue;
+		border-color: $color-dark-blue;
 
 		.nav-grid__btn {
-			border-color: variables.$color-dark-blue;
+			border-color: $color-dark-blue;
 
 			.icon {
-				@include tools.translate(.625rem, 0);
+				@include translate(.625rem, 0);
 			}
 		}
 	}
@@ -48,10 +45,10 @@
 
 /* ----- Content ----- */
 .nav-grid__content {
-	@include tools.clearfix();
+	@include clearfix();
 	padding: 1.25rem 1.875rem .625rem 1.875rem;
 
-	@media (min-width: variables.$screen-md-min) {
+	@media (min-width: $screen-md-min) {
 		padding: 1.875rem 2.5rem 1.25rem 2.5rem;
 	}
 
@@ -63,7 +60,7 @@
 /* ----- Title ----- */
 .nav-grid__title {
 	display: block;
-	font-size: variables.$font-size-h3;
+	font-size: $font-size-h3;
 	font-weight: 500;
 	padding: 0;
 	margin-top: 0;
@@ -72,14 +69,14 @@
 
 /* ----- Read more ----- */
 .nav-grid__btn {
-	font-family: variables.$font-family-secondary;
+	font-family: $font-family-secondary;
 	font-weight: 500;
 	text-transform: uppercase;
-	border-top: 2px solid rgba(variables.$color-dark-blue, .2);
+	border-top: 2px solid rgba($color-dark-blue, .2);
 	padding: 1.25rem 1.875rem 0 1.875rem;
 	transition: border .2s;
 
-	@media (min-width: variables.$screen-md-min) {
+	@media (min-width: $screen-md-min) {
 		padding: 1.25rem 2.5rem 0 2.5rem;
 	}
 

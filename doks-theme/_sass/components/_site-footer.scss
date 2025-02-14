@@ -2,12 +2,9 @@
  * Site footer (components/_site-footer.scss)
  */
 
-@use "../variables";
-@use "../tools";
-
 /* ----- General ----- */
 .site-footer {
-	background-color: variables.$color-footer-bg;
+	background-color: $color-footer-bg;
 	padding: 3.75rem 0 (3.75rem - 1.25rem) 0;
 
 	hr {
@@ -17,11 +14,11 @@
 
 /* ----- Logo ----- */
 .site-footer__logo {
-	@include tools.link-reset;
+	@include link-reset;
 	display: inline-block;
-	color: variables.$color-footer-copyright;
-	font-family: variables.$font-family-secondary;
-	font-size: variables.$font-size-h3;
+	color: $color-footer-copyright;
+	font-family: $font-family-secondary;
+	font-size: $font-size-h3;
 	font-weight: 700;
 	vertical-align: top;
 	margin: 0 0 1.25rem 0;
@@ -34,7 +31,7 @@
 
 /* ----- Copyright ----- */
 .site-footer__copyright {
-	color: variables.$color-footer-copyright;
+	color: $color-footer-copyright;
 	font-size: .875em;
-	line-height: variables.$line-height-base;
+	line-height: $line-height-base;
 }

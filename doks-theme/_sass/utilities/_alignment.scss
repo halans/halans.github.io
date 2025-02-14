@@ -2,8 +2,6 @@
  * Alignment (utilities/_alignment.scss)
  */
 
-@use "../variables";
-
 /* ----- Vertical alignment ----- */
 .align-container {
 	display: table;
@@ -26,7 +24,7 @@
 
 /* ----- Horizontal alignment ----- */
 .align-right {
-	@media (min-width: variables.$screen-sm-min) {
+	@media (min-width: $screen-sm-min) {
 		text-align: right;
 	}
 }

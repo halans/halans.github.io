@@ -2,11 +2,9 @@
  * Error 404 (objects/_error-404.scss)
  */
 
-@use "../variables";
-
 /* ----- General ----- */
 .error-404 {
-	background-color: variables.$color-theme-blue;
+	background-color: $color-theme-blue;
 	text-align: center;
 
 	.align-container {
@@ -16,12 +14,12 @@
 
 /* ----- Title ----- */
 .error-404__title {
-	color: variables.$color-dark-blue;
+	color: $color-dark-blue;
 	font-weight: normal;
-	font-size: variables.$font-size-h3;
+	font-size: $font-size-h3;
 	margin-top: 0;
 
-	@media (min-width: variables.$screen-sm-min) {
-		font-size: variables.$font-size-h1;
+	@media (min-width: $screen-sm-min) {
+		font-size: $font-size-h1;
 	}
 }

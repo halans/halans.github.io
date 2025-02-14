@@ -2,25 +2,22 @@
  * Green (themes/_green.scss)
  */
 
-@use "../variables";
-@use "sass:color";
-
 /* ----- Hero subheader ----- */
 .green {
 	.hero-subheader {
-		background-color: variables.$color-theme-green;
+		background-color: $color-theme-green;
 	}
 }
 
 /* ----- Nav grid ----- */
 .green {
 	.nav-grid__item {
-		background-color: variables.$color-theme-green;
+		background-color: $color-theme-green;
 
 		&:hover,
 		&:active,
 		&:focus {
-			background-color: variables.$color-theme-green;
+			background-color: $color-theme-green;
 		}
 	}
 }
@@ -28,20 +25,20 @@
 /* ----- Section ----- */
 .green {
 	.section--darker-theme-color-bg {
-		background-color: color.adjust(variables.$color-theme-green, $lightness: -3%);
+		background-color: darken($color-theme-green, 3%);
 	}
 }
 
 /* ----- Page nav ----- */
 .green {
 	.page-nav {
-		background-color: variables.$color-theme-green;
+		background-color: $color-theme-green;
 	}
 }
 
 /* ----- Error 404 ----- */
 .green {
 	&.error-404 {
-		background-color: variables.$color-theme-green;
+		background-color: $color-theme-green;
 	}
 }

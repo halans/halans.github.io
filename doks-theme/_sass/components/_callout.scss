@@ -2,17 +2,14 @@
  * Callout (components/_callout.scss)
  */
 
-@use "../variables";
-@use "sass:color";
-
 /* ----- General ----- */
 .callout {
-	border: 2px solid color.adjust(variables.$color-callout, $lightness: -4%);
-	background-color: variables.$color-callout;
+	border: 2px solid darken($color-callout, 4%);
+	background-color: $color-callout;
 	padding: .9375rem 1.25rem .625rem 1.25rem;
 	margin: 0 0 1.25rem 0;
 
-	@media (min-width: variables.$screen-sm-min) {
+	@media (min-width: $screen-sm-min) {
 		padding: 1.25rem 1.875rem .9375rem 1.875rem;
 	}
 
@@ -24,8 +21,8 @@
 
 	strong {
 		display: block;
-		color: variables.$color-dark;
-		font-family: variables.$font-family-secondary;
+		color: $color-dark;
+		font-family: $font-family-secondary;
 		font-size: 1.133em;
 		font-weight: 500;
 		margin-bottom: .625rem;
@@ -35,38 +32,38 @@
 /* ----- Variations ----- */
 .callout {
 	&--success {
-		background-color: variables.$color-callout-success;
-		border-color: color.adjust(variables.$color-callout-success, $lightness: -6%);
+		background-color: $color-callout-success;
+		border-color: darken($color-callout-success, 6%);
 
 		strong {
-			color: color.adjust(variables.$color-callout-success, $lightness: -82%);
+			color: darken($color-callout-success, 82%);
 		}
 	}
 
 	&--info {
-		background-color: variables.$color-callout-info;
-		border-color: color.adjust(variables.$color-callout-info, $lightness: -4%);
+		background-color: $color-callout-info;
+		border-color: darken($color-callout-info, 4%);
 
 		strong {
-			color: color.adjust(variables.$color-callout-info, $lightness: -82%);
+			color: darken($color-callout-info, 82%);
 		}
 	}
 
 	&--warning {
-		background-color: variables.$color-callout-warning;
-		border-color: color.adjust(variables.$color-callout-warning, $lightness: -10%);
+		background-color: $color-callout-warning;
+		border-color: darken($color-callout-warning, 10%);
 
 		strong {
-			color: color.adjust(variables.$color-callout-warning, $lightness: -70%);
+			color: darken($color-callout-warning, 70%);
 		}
 	}
 
 	&--danger {
-		background-color: variables.$color-callout-danger;
-		border-color: color.adjust(variables.$color-callout-danger, $lightness: -4%);
+		background-color: $color-callout-danger;
+		border-color: darken($color-callout-danger, 4%);
 
 		strong {
-			color: color.adjust(variables.$color-callout-danger, $lightness: -70%);
+			color: darken($color-callout-danger, 70%);
 		}
 	}
 }
