@@ -5,7 +5,7 @@ keywords:
 
 # Hero section
 title: halans.github.io
-description: Belgian Waffle Connoisseur. Photographer. Coder.<br> My repository for all things personal and private.
+description: Belgian Waffle Connoisseur. Photographer. Coder.<br> My repository for all things personal and private experiments.
 buttons:
     - icon: github
       content: Github Repo
