@@ -29,6 +29,10 @@ grid_navigation:
       excerpt: Photography business site
       cta: Check it out
       url: 'https://halansphotography.com/'
+    - title: halans.dev
+      excerpt: experiments
+      cta: Browse
+      url: 'https://halans.dev/'
     - title: artimitates.life
       excerpt: Photography blog
       cta: Read
