@@ -30,7 +30,7 @@ grid_navigation:
       cta: Check it out
       url: 'https://halansphotography.com/'
     - title: halans.dev
-      excerpt: experiments
+      excerpt: Tiny projects and experiments
       cta: Browse
       url: 'https://halans.dev/'
     - title: artimitates.life
